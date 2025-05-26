@@ -1,0 +1,155 @@
+= Experiment 02: Creating Public Key and Private Key using OpenSSL for the Purpose of Encryption and Decryption
+
+== 🧠 Aim / Overview of the Practical
+
+The objective of this experiment is to understand the concepts of *public key* and *private key* cryptography and how to generate these keys using *OpenSSL*. 
+
+Public key cryptography, also known as asymmetric cryptography, uses a pair of keys:
+
+- A *public key* (for encryption)
+- A *private key* (for decryption)
+
+This system is widely used for secure communications, digital signatures, and more.
+
+In this experiment, we will:
+
+- Learn how to generate a public and private key pair using OpenSSL.
+- Use the keys for encryption and decryption of a message.
+
+== ✅ Tasks / Objectives
+
+- Generate a public and private key pair using OpenSSL.
+- Encrypt a plaintext message using the public key.
+- Decrypt the ciphertext using the private key.
+- Understand the importance of key management and cryptographic security.
+
+== 🧪 Steps for the Experiment
+
+=== Step 1: Install OpenSSL (if not installed)
+
+OpenSSL is a toolkit used for implementing Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, along with a library of cryptographic algorithms.
+
+For Linux (Ubuntu/Debian):
+
+[source, bash]
+----
+sudo apt update
+sudo apt install openssl
+----
+
+For macOS:
+
+[source, bash]
+----
+brew install openssl
+----
+
+For Windows:
+
+Download OpenSSL from https://slproweb.com/products/Win32OpenSSL.html
+
+=== Step 2: Generate the RSA Private Key
+
+RSA (Rivest–Shamir–Adleman) is a popular asymmetric encryption algorithm.
+
+Use the following command in the terminal:
+
+[source, bash]
+----
+openssl genpkey -algorithm RSA -out private_key.pem -aes256
+----
+
+*Explanation:*
+
+- `genpkey`: Command to generate a private key.
+- `-algorithm RSA`: Specifies RSA as the encryption algorithm.
+- `-out private_key.pem`: The name of the file to save the private key.
+- `-aes256`: Encrypts the private key with AES-256 encryption for added security.
+
+You will be prompted to set a passphrase to secure the private key.
+
+=== Step 3: Generate the Public Key
+
+Extract the public key from the private key using the following command:
+
+[source, bash]
+----
+openssl rsa -pubout -in private_key.pem -out public_key.pem
+----
+
+*Explanation:*
+
+- `rsa -pubout`: This command extracts the public key from the private key.
+- `-in private_key.pem`: Specifies the private key file.
+- `-out public_key.pem`: Specifies the file to save the public key.
+
+Now you have two files:
+
+- `private_key.pem`: The private key.
+- `public_key.pem`: The public key.
+
+=== Step 4: Encrypt a Message Using the Public Key
+
+Create a plain text file (e.g., `message.txt`) containing the message you want to encrypt:
+
+[source, bash]
+----
+echo "This is a secret message" > message.txt
+----
+
+Encrypt the message:
+
+[source, bash]
+----
+openssl rsautl -encrypt -inkey public_key.pem -pubin -in message.txt -out message.enc
+----
+
+=== Step 5: Decrypt the Message Using the Private Key
+
+Decrypt the encrypted message using the private key:
+
+[source, bash]
+----
+openssl rsautl -decrypt -inkey private_key.pem -in message.enc -out decrypted_message.txt
+----
+
+=== Step 6: Verify the Decrypted Message
+
+View the contents of the decrypted message file:
+
+[source, bash]
+----
+cat decrypted_message.txt
+----
+
+You should see the output:
+
+[source, text]
+----
+This is a secret message
+----
+
+== 📝 Summary / Conclusion
+
+In this experiment, we successfully generated a public-private key pair using OpenSSL and used the keys for encryption and decryption.
+
+The public key was used to encrypt a message, and the private key was used to decrypt it back to its original form. This demonstrated the basic concept of *asymmetric encryption* and how OpenSSL can be used for secure communications.
+
+Public-key cryptography is widely used in various applications such as:
+
+- Securing data transmission
+- Digital signatures
+- Encrypting sensitive information
+
+== 🎯 Learning Outcomes
+
+By completing this experiment, I have learned:
+
+- *Public-Key Cryptography*: The concept of asymmetric encryption using public and private keys.
+- *Key Generation*: How to generate and manage RSA key pairs using OpenSSL.
+- *Encryption and Decryption*: Encrypting and decrypting messages securely using the generated keys.
+- *OpenSSL Commands*: Practical use of OpenSSL for cryptographic operations like key generation, encryption, and decryption.
+
+== 🔗 Relevance to Blockchain
+
+Public and private key cryptography is the foundation of blockchain technology. It ensures the authenticity of transactions and ownership of digital assets. This experiment builds practical understanding of cryptographic mechanisms that secure blockchain systems.
