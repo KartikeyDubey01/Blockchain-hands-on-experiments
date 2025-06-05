@@ -48,7 +48,9 @@ Ensure you have Python 3.x installed on your system.
 
 Install hashlib (comes pre-installed with Python):
 
-[source,sh] pip install hashlib
+```bash
+pip install hashlib
+```
 
 === Step 3: Implement the Blockchain Code
 
@@ -113,7 +115,9 @@ The blockchain's index, timestamp, data, hash, and previous hash are printed to 
 
 Save the script as simple_blockchain.py and run it using:
 
-[source,sh] python simple_blockchain.py
+```bash
+python simple_blockchain.py
+```
 
 == 4. Summary/Conclusion
 
