@@ -59,7 +59,7 @@ These experiments reinforce key blockchain security mechanisms:
 
 ```bash
 # Example: Generate SHA-256 hash
-echo -n "hello123" | sha256sum
+echo -n "hello1234" | sha256sum
 
 # Example: Generate RSA private key
 openssl genpkey -algorithm RSA -out private_key.pem -aes256
