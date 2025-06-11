@@ -1,0 +1,117 @@
+# 🧪 Practical: Setting Up a Cryptocurrency Wallet
+
+```
+==============================================================
+📌 1. Aim / Overview of the Practical
+==============================================================
+```
+The goal of this experiment is to understand the process of 
+setting up a cryptocurrency wallet. A cryptocurrency wallet is 
+essential for managing digital currencies, including Bitcoin, 
+Ethereum, and other altcoins.
+
+It stores public and private keys, allows users to send and 
+receive cryptocurrency, and serves as a critical tool for 
+secure transaction management.
+
+In this practical, we will:
+- Set up a cryptocurrency wallet
+- Secure the wallet
+- Learn basic functionalities like backing up keys
+- Send/receive funds securely
+
+---
+
+```
+==============================================================
+🛠️ 2. Task to be Done / Steps of the Experiment
+==============================================================
+```
+
+1. Understand different types of cryptocurrency wallets
+2. Install a software wallet (e.g., Exodus)
+3. Create a new wallet
+4. Backup the wallet's recovery phrase or keys
+5. Send and receive cryptocurrency
+6. Enable security features like 2FA
+
+---
+
+```
+==============================================================
+🧾 3. Steps for Experiment / Practical
+==============================================================
+```
+
+### 🧩 Step 1: Choose a Cryptocurrency Wallet
+- Types: Hardware, Software (mobile/desktop), Web wallets
+- For this demo, we'll use **Exodus** (software wallet)
+
+---
+
+### 💾 Step 2: Download and Install the Wallet
+- Visit official site: [https://www.exodus.com](https://www.exodus.com)
+- Download wallet for your OS (Windows/macOS/Linux)
+- Follow installation instructions
+
+---
+
+### 🛡️ Step 3: Create a New Wallet
+- Open Exodus app
+- Select **"Create New Wallet"**
+- Set a **strong password** for local access
+
+---
+
+### 🔐 Step 4: Backup the Wallet
+- You’ll receive a **12-word recovery phrase**
+- Write it down and store securely (offline)
+- Never share it; confirm phrase if asked
+
+---
+
+### 🏦 Step 5: Get Your Wallet Address
+- Go to **"Receive"** tab in Exodus
+- Select the crypto (e.g., BTC, ETH)
+- Copy wallet address or scan QR code
+
+---
+
+### 📤 Step 6: Send Cryptocurrency
+- Go to **"Send"** tab
+- Enter recipient’s address and amount
+- Review fees and confirm
+- Enter wallet password to proceed
+
+---
+
+### ✅ Step 7: Verify Transaction
+- Check the **"History"** section
+- Alternatively, verify using a blockchain explorer:
+  e.g., [https://www.blockchain.com/explorer](https://www.blockchain.com/explorer)
+
+---
+
+### 🔐 Step 8: Enable Security Features
+- Enable **2FA** using Google Authenticator (if available)
+- Regularly update passwords
+- Ensure secure local device access
+
+---
+
+```
+==============================================================
+📚 4. Summary / Conclusion
+==============================================================
+```
+
+✔️ We successfully set up and explored a cryptocurrency wallet.  
+✔️ Learned to create, back up, and secure the wallet.  
+✔️ Understood how to send and receive crypto transactions.  
+✔️ Emphasized importance of **security measures** like:
+- Strong passwords
+- Offline backup
+- Two-Factor Authentication (2FA)
+
+> ✅ A cryptocurrency wallet is your gateway to digital finance.  
+> Treat your recovery phrase like a **master key** — never lose it or share it!
