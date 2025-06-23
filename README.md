@@ -6,7 +6,7 @@ Welcome to the **Blockchain Hands-On Experiment** repository! This collection co
 
 ## 📚 Contents
 
-### ✅ Experiment 01: Generating Hash Values Using Linux Commands
+### ✅ Experiment : Generating Hash Values Using Linux Commands
 
 - Understand hashing and its role in data integrity and security.
 - Use Linux commands to generate MD5, SHA-1, and SHA-256 hash values from a given string.
@@ -17,7 +17,7 @@ Welcome to the **Blockchain Hands-On Experiment** repository! This collection co
 
 ---
 
-### ✅ Experiment 02: Public/Private Key Generation using OpenSSL
+### ✅ Experiment : Public/Private Key Generation using OpenSSL
 
 - Generate RSA key pairs (public/private) using OpenSSL.
 - Encrypt a message with the public key and decrypt with the private key.
